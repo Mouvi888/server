@@ -51,6 +51,8 @@
             <i class="fa fa-bars"></i>
         </div>
         <script>
+document.querySelector('.desktop_navbar_link').addEventListener('click', function(event) {
+    event.preventDefault(); 
             function mobile_navbar_link_hider() {
             var x = document.getElementById("mobile_navbar_links");
             if (x.style.display === "flex") {
