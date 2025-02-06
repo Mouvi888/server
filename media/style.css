@@ -7,30 +7,6 @@
     --background1: #212529;
     --background2: #262b2e;
 
-.image-container {
-    display: inline-block; /* позволяет изображению сохранять размеры */
-    position: relative; /* для абсолютного позиционирования фона */
-    border-radius: 15px; /* скругленные углы, можно изменить значение по желанию */
-    overflow: hidden; /* чтобы содержимое не выходило за границы скругленных углов */
-}
-
-.image-container::after {
-    content: ""; /* создаем пустой элемент */
-    position: absolute; /* позиционирование относительно родителя */
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    background-color: rgba(0, 0, 0, 0.5); /* цвет фона с прозрачностью */
-    opacity: 0; /* изначально фон не видим */
-    transition: opacity 0.3s ease; /* эффект плавного появления */
-    border-radius: 15px; /* скругленные углы для фона, совпадают со значением родителя */
-}
-
-.image-container:hover::after {
-    opacity: 1; /* фон становится видимым при наведении */
-}
-    
 ::selection {
     background-color: #265228; /* Цвет фона выделенного текста */
     color: white; /* Цвет текста при выделении */
