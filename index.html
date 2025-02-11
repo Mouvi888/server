@@ -35,6 +35,14 @@
         <div class="icon" onclick="mobile_navbar_link_hider()">
             <i class="fa fa-bars"></i>
         </div>
+<div id="loader">
+       <img src="loading.gif" alt="Загрузка...">
+</div>
+<script>
+        window.onload = function() {
+       document.getElementById('loader').style.display = 'none';
+   };
+</script>
         <script>
 document.querySelector('.desktop_navbar_link').addEventListener('click', function(event) {
     event.preventDefault(); 
